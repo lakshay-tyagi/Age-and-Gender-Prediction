@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--
+	Canvas by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Age and Gender Detection</title>
+
+    <!-- =============== Bootstrap Core CSS =============== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <!-- =============== Google fonts =============== -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<!-- =============== fonts awesome =============== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <!-- =============== Plugin CSS =============== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}" type="text/css">
+    <!-- =============== Custom CSS =============== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <!-- =============== Owl Carousel Assets =============== -->
+    <link href="{{ url_for('static', filename='owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='owl-carousel/owl.theme.css') }}" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- =============== Preloader =============== -->
+    <div id="preloader">
+        <div id="loading">
+        </div>
+    </div>
+    <!-- =============== nav =============== -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="200" height="50">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#how-it-works">Features</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Screenshots">Screenshots</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Price">Demo</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- =============== navbar-collapse =============== -->
+
+            </div>
+        </div>
+        <!-- =============== container-fluid =============== -->
+    </nav>
+    <!-- =============== header =============== -->
+    <header>
+		<!-- =============== container =============== -->
+        <div class="container">
+            <div class="header-content row">
+                <div class="col-xs-12 col-sm-5 col-md-5">
+                    <h2 class="wow bounceIn animated" data-wow-delay=".40s">Gender and Age Predictor</h2>
+                    <h3 class="wow bounceIn animated" data-wow-delay=".50s">Upload your image and let the code, encode your age and gender!</h3>
+                    <p class="wow bounceIn animated" data-wow-delay=".60s"></p>
+                    <p>
+                        <div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s"><i class="hbtn"></i> <span >  <a style="color: azure;" href="#Price">Try Now</a> </span>
+                            
+                             <i class="fa fa-cloud-download"></i>
+                             
+                        </div>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 wow slideInLeft animated">
+                    <!-- <img src="img/bgai.jpeg" alt="phones" /> -->
+                </div>
+            </div>
+        </div>
+		<!-- =============== container end =============== -->
+    </header>
+    <!-- =============== About =============== -->
+    <section id="about" class="">
+		<!-- =============== container =============== -->
+        <div class="container">
+            <span class="angle2"></span>
+            <span class="angle"></span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-3 wow fadeInLeft animated" data-wow-delay=".5s">
+                    <h1><span>HEY THERE!</span> WELCOME TO OUR SITE</h2>      
+                  </div>
+                  <div class="col-xs-12 col-sm-7 col-md-9 wow fadeInRight animated" data-wow-delay=".5s">
+                  <h2>The objective of our work is to increase transparency and accountability of people on media platforms and to prevent any fake profiles being created. This can help in achieving a safe   environment, on especially social media platforms and keep our generation safe and sound.</h2>
+                  
+  
+					
+                  </div>     
+            </div>
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>
+    <!-- =============== how it works =============== -->
+    <section id="how-it-works" class="parallax">
+	<!-- =============== container =============== -->
+    <div class="container">
+     <span class="angle2"></span>
+    <span class="angle"></span>
+     <div class="row">
+
+       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".5s">
+           <h2>Project <span> Features</span></h2>
+           <p>Now lets hover over the functonalities.</p>
+       </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="row">     
+          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".5s">
+            <h3 style="text-align: left;">Gender Detection</h3>
+              <p style="text-align: left;">It will predict either male or female with utmost accuracy.</p>     
+          </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".5s">
+                <!-- <i class="fa fa-apple iconfont"></i> -->
+          </div>    
+        </div>
+        <div class="row"> 
+         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textright" data-wow-delay=".6s">
+            <h3 style="text-align: left;" >Age Detection</h3>
+              <p style="text-align: left;">It will predict the age of the person and the predicted age may be in one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100)</p>    
+          </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".6s">
+                <!-- <i class="fa fa-rocket iconfont"></i>
+          </div>      
+        </div>
+        <div class="row">            
+         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".7s">
+                 
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".7s">
+                <!-- <i class="fa fa-film iconfont"></i> -->
+          </div>         
+           
+        </div>        
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated textcenter" data-wow-delay=".4s">
+       <img src="{{ url_for('static', filename='img/modijii.jpg') }}" height=500px border-radius= alt="slide-bg" />
+      </div>  
+         
+      <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="row">         
+          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".5s">
+                <!-- <i class="fa fa-android iconfont2"></i> -->
+          </div>    
+          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textleft" data-wow-delay=".5s">
+            <h3 style="text-align: left;">Deep Learning</h3>
+            <p style="text-align: left;" > Here, Deep Learning is used to accurately identify the gender and age of a person from a single image of a face.</p> 
+                 
+          </div>
+           
+        </div>
+        <div class="row">    
+        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".6s">
+                <!-- <i class="fa fa-css3 iconfont2"></i> -->
+          </div>          
+          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".6s">
+            <h3>Dataset</h3>
+            <p>The dataset used here is the Adience dataset.This dataset serves as a benchmark for face photos and is inclusive of various real-world imaging conditions like noise, lighting, pose, and appearance.</p>
+               
+          </div>
+          
+        </div>
+        <div class="row">    
+        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".7s">
+                <!-- <i class="fa fa-users iconfont2"></i> -->
+          </div>          
+          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".7s">
+                
+          </div>
+           
+        </div>        
+      </div>
+    </div>
+    </div>   
+	<!-- =============== container end =============== -->	
+    </section>
+    <!-- =============== Screenshots =============== -->
+    <section id="Screenshots" class="">
+	<!-- =============== container =============== -->
+    <div class="container">
+    <span class="angle2"></span>
+    <span class="angle"></span>
+     <div class="row">
+
+       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
+           <h2>Screen <span>Shots</span></h2>
+           <p>So, here are some instances where age and gender of our team members have been predicted.  </p>
+       </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12">
+         <div class="row">     
+          <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated textright" data-wow-delay=".1s">           
+               <div class="span12">
+
+                      <div id="owl-demo" class="owl-carousel">
+                        <div class="item">
+                            <div class="imghover" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img src="{{ url_for('static', filename='img/pic1.jpeg') }}" alt="Owl Image" width="320" height="480">         
+                            <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="imghover" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">
+                            <img src="{{ url_for('static', filename='img/pic2.jpeg') }}" alt="Owl Image" width="320" height="480">
+                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
+                            </div>
+                        </div>
+                       <div class="item">
+                            <div class="imghover" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">
+                            <img src="{{ url_for('static', filename='img/pic3.jpeg') }}" alt="Owl Image" width="320" height="480">
+                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <div class="imghover" data-toggle="modal" data-target="#exampleModa4" data-whatever="@mdo">
+                            <img src="{{ url_for('static', filename='img/pic4.jpeg') }}" alt="Owl Image" width="320" height="480">
+                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
+                            </div>
+                        </div>
+                      </div>              
+                    </div>     
+                      
+        </div>     
+          <!-- =============== popup large image =============== -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <img src="{{ url_for('static', filename='img/pic1.jpeg') }}" alt="Owl Image">
+          </div>
+         </div>
+
+         <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2">
+          <div class="modal-dialog" role="document">
+            <img src="{{ url_for('static', filename='img/pic2.jpeg') }}" alt="Owl Image">
+          </div>
+         </div>
+         
+         <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3">
+          <div class="modal-dialog" role="document">
+            <img src="{{ url_for('static', filename='img/pic3.jpeg') }}" alt="Owl Image">
+          </div>
+         </div>
+         
+         <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe4">
+          <div class="modal-dialog" role="document">
+            <img src="{{ url_for('static', filename='img/owl4.jpg') }}" alt="Owl Image">
+          </div>
+         </div>
+		 <!-- =============== popup large image end =============== -->
+      </div>
+      
+    </div>
+    </div>      
+	</div><!-- =============== container end =============== -->
+    </section>
+    <!-- =============== Price =============== -->
+    <section id="Price" class="">
+	<!-- =============== container =============== -->
+        <div class="container">
+        <span class="angle2"></span>
+        <span class="angle"></span>
+
+         <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated headding" data-wow-delay=".1s">
+                <h3 class="text-center">Age and Gender Detection</h3>
+
+                <form class="p-3 text-center" action='/' method='post' enctype='multipart/form-data'>
+                    <input class='form-control' type='file' name='imagefile'>
+                    <br>
+                    <br>
+                    <input class="btn btn-primary mt-3" type='Submit' value="Predict Image">
+                </form>
+
+                {% if prediction %}
+                    <p class="text-center">Image is a {{prediction}}</p>
+                {% endif %}
+               
+           </div>
+
+          
+        </div>    <!-- =============== container end =============== -->  
+        </section>
+    <!-- =============== Contact =============== -->
+    <section id="contact">
+	<!-- =============== container =============== -->
+		<div class="container">
+			    <div class="row">
+                 <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
+                    <h1>Our <span>Team</span></h1>
+                    <h3>We, members of group 49 from Vellore Institute of technology(Bhopal), heartly thank you for visiting our work. Hope you like it!  </h3>
+                   <!-- <h2>Contact <span>Us</span></h2>
+                   <p>Display your mobile apps awesome features with icon lists and an image carousel of each page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p> -->
+               </div>
+
+
+			</div>
+
+			<!-- <div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
+                    <div class="price-wrapper ">
+                        <h3 class="price-title">Student-1</h3>
+                        <div class="price">
+                            <div class="value-box">
+                                <div class="value-box-content">
+                                    <span class="value">
+                                        <i></i><span class="number">M.Shraddha</span>
+                                    </span>
+                                    <span class="month invisible"></span>
+                                </div>
+                            </div>
+        
+                            <div class="content-box">			
+                                <ul>
+                                <li>20BAI10034</li>
+                            
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s"></div>
+                  <div class="price-wrapper ">
+                    <h3 class="price-title">Student-2</h3>
+                    <div class="price">
+                        <div class="value-box">
+                            <div class="value-box-content">
+                                <span class="value">
+                                    <i></i><span class="number">Lakshay <br> Tyagi</span>
+                                </span>
+                                <span class="month invisible"></span>
+                            </div>
+                        </div>
+    
+                        <div class="content-box">			
+                            <ul>
+                            <li>20BAI10173</li>
+                        
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s"></div>
+              <div class="price-wrapper ">
+                <h3 class="price-title">Student-3</h3>
+                <div class="price">
+                    <div class="value-box">
+                        <div class="value-box-content">
+                            <span class="value">
+                                <i></i><span class="number">Nishi Jain</span>
+                            </span>
+                            <span class="month invisible"></span>
+                        </div>
+                    </div>
+
+                    <div class="content-box">			
+                        <ul>
+                        <li>20BAI10196</li>
+                    
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s"></div>
+          <div class="price-wrapper ">
+            <h3 class="price-title">Student-4</h3>
+            <div class="price">
+                <div class="value-box">
+                    <div class="value-box-content">
+                        <span class="value">
+                            <i></i><span class="number"> <p>Hemanth <br>
+                              Varma</p> </span>
+                        </span>
+                        <span class="month invisible"></span>
+                    </div>
+                </div>
+
+                <div class="content-box">			
+                    <ul>
+                    <li>20BAI10225</li>
+                
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+      </div> -->
+   <!-- new .................... -->
+   <br>
+   <br>
+   <br>
+      <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInLeft animated" >
+        <div class="price-wrapper ">
+              <h3 class="price-title">Student-1</h3>
+              <div class="price">
+                  <div class="value-box">
+                      <div class="value-box-content">
+                          <span class="value">
+                              <i></i><span class="number">M.Shraddha</span>
+                          </span>
+                          <span class="month invisible"></span>
+                      </div>
+                  </div>
+
+                  <div class="content-box">			
+                      <ul>
+                      <li style="color: azure;">20BAI10034</li>
+                  
+                      </ul>
+                  </div>
+                  
+              </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInLeft animated" >
+          <div class="price-wrapper ">
+                <h3 class="price-title">Student-2</h3>
+                <div class="price">
+                    <div class="value-box">
+                        <div class="value-box-content">
+                            <span class="value">
+                                <i></i><span class="number">Lakshay <br> Tyagi</span>
+                            </span>
+                            <span class="month invisible"></span>
+                        </div>
+                    </div>
+
+                    <div class="content-box">			
+                        <ul>
+                        <li style="color: azure;">20BAI10173</li>
+                    
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInLeft animated" >
+              <div class="price-wrapper ">
+                    <h3 class="price-title">Student-3</h3>
+                    <div class="price">
+                        <div class="value-box">
+                            <div class="value-box-content">
+                                <span class="value">
+                                    <i></i><span class="number">Nishi Jain</span>
+                                </span>
+                                <span class="month invisible"></span>
+                            </div>
+                        </div>
+    
+                        <div class="content-box">			
+                            <ul>
+                            <li style="color: azure;">20BAI10196</li>
+                        
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInLeft animated" >
+                  <div class="price-wrapper ">
+                        <h3 class="price-title">Student-4</h3>
+                        <div class="price">
+                            <div class="value-box">
+                                <div class="value-box-content">
+                                    <span class="value">
+                                        <i></i><span class="number"> <p>Hemanth <br>
+                                          Varma</p> </span>
+                                    </span>
+                                    <span class="month invisible"></span>
+                                </div>
+                            </div>
+        
+                            <div class="content-box">			
+                                <ul>
+                                <li style="color: azure;">20BAI10225  </li>
+                            
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+
+					<!-- <form>
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp animated">
+								<label for="c_name" class="sr-only">Name</label>
+								<input type="text" placeholder="Name" name="c_name" class="form-control" id="c_name">
+							</div>
+
+							<div data-wow-delay=".1s" class="form-group wow fadeInUp animated">
+								<label for="c_email" class="sr-only">Email</label>
+								<input type="email" placeholder="E-mail" name="c_email" class="form-control" id="c_email">
+							</div>
+
+							<div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
+								<textarea placeholder="Message" rows="7" name="c_message" id="c_message" class="form-control"></textarea>
+							</div>
+
+							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Send Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form> -->
+
+				<!-- </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated map" data-wow-delay=".5s">
+
+					  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6508922.473104964!2d-123.76275651635396!3d37.19583981824279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCalifornia%2C+United+States!5e0!3m2!1sen!2sin!4v1450994260631" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<!-- 
+				</div> -->
+                  <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".6s"> 
+
+					  <!-- <section id="text-15" class="widget widget_text">
+                         <h3 class="widget-title">California, United States</h3> <div class="textwidget">785, Firs Avenue, place Mall,<br>
+                        <p>Tel: 01 234-56786<br>
+                        Mobile: 01 234-56786<br>
+                        E-mail: <a href="#">info@templatestock.com</a></p>
+                        <a href="#">Get directions on the map</a> →</div>
+                    </section> -->
+
+				<!-- </div>                 --> 
+			<!-- </div>
+            <p class="copyright">
+                &copy;2021
+            </p> -->
+		</div><!-- =============== container end =============== -->
+	</section>
+    <!-- Footer -->
+    <footer id="footer">
+	<!-- =============== container =============== --> 
+    <div class="container">
+			    <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+
+                    <p class="copyright">
+                        &copy;2021
+					</p>
+
+				</div>
+			</div>
+    </div><!-- =============== container end =============== -->
+	</footer>
+    <!-- =============== jQuery =============== -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <!-- =============== Bootstrap Core JavaScript =============== -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- =============== Plugin JavaScript =============== -->
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fittext.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <!-- =============== Custom Theme JavaScript =============== -->
+    <script src="{{ url_for('static', filename='js/creative.js') }}"></script>
+    <!-- =============== owl carousel =============== -->
+    <script src="{{ url_for('static', filename='owl-carousel/owl.carousel.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                autoPlay: 3000,
+                items: 3,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3]
+            });
+
+        });
+    </script>
+</body>
+</html>
